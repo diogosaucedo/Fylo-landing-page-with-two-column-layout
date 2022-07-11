@@ -1,0 +1,23 @@
+@use "../base/colors";
+.c-section {
+  &__title-1 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+
+  &__title-2 {
+    font-size: 3rem;
+  }
+
+  &__text {
+    max-width: 59rem;
+    padding: 1rem 0;
+
+    letter-spacing: 0;
+    font-size: 1.8rem;
+  }
+  
+  &__text--light {
+    color: darken(colors.$light-gray, 50%);
+  }
+}

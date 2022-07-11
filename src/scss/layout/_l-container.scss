@@ -1,0 +1,41 @@
+@use "../base/extends";
+@use "../base/colors";
+
+.l-container {
+  @extend %u-display-flex, %u-justify-center, %u-align-center;
+
+  width: 125rem;
+
+  &__content {
+    .c-how-works {
+      margin: 1rem 0 4rem 0;
+    }
+  }
+
+  &__center {
+    @extend %u-display-flex, %u-justify-space-between, %u-align-center;
+    width: 125rem;
+  }
+
+  &__illustration {
+    width: 65rem;
+  }
+
+  &--full {
+    @extend %u-flex-wrap;
+
+    width: 100%;
+    padding: 8rem;
+    
+    background-color: colors.$light-grayish-blue;
+
+    .l-container__illustration {
+      width: 54rem;
+    }
+  }
+
+  &--full-blue {
+    background-color: colors.$desaturated-blue;
+    color: colors.$white;
+  }
+}

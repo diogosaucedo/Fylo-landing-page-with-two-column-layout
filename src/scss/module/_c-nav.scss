@@ -1,0 +1,13 @@
+@use "../base/extends";
+@use "../base/colors";
+
+.c-nav {
+  &__list {
+    @extend %u-display-flex, %u-justify-space-between;
+
+    width: 28rem;
+
+    font-size: 1.6rem;
+    color: colors.$very-dark-blue;
+  }
+}

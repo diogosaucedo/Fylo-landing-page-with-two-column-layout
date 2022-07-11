@@ -1,0 +1,16 @@
+@use "../base/colors";
+
+.c-button {
+  width: 20rem;
+  height: 4.4rem;
+
+  border-radius: 0.3rem;
+  border: none;
+  background-color: colors.$bright-blue;
+  color: colors.$light-grayish-blue;
+  font-size: 1.6rem;
+
+  &:active {
+    background-color: lighten(colors.$bright-blue, 10%);
+  }
+}

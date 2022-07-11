@@ -1,0 +1,31 @@
+@use "../base/colors";
+@use "../base/base";
+
+.l-footer {
+  @extend %u-display-flex, %u-align-end, %u-justify-center;
+
+  width: 100%;
+  padding-bottom: 6rem;
+  min-height: 40rem;
+
+  background-color: colors.$very-dark-blue;
+  color: colors.$white;
+
+  .c-logo {
+    width: 18rem;
+  }
+
+  &__container {
+    @extend %u-display-flex, %u-direction-column;
+    width: 125rem;
+  }
+
+  &__main-content {
+    @extend %u-display-flex,
+      %u-flex-wrap,
+      %u-justify-space-between,
+      %u-align-start;
+
+    width: 90%;
+  }
+}

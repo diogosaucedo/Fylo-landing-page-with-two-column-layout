@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1280px) {
+  .l-header,
+  .l-container,
+  .l-container__center,
+  .l-footer__container {
+    width: 90%;
+  }
+
+  .l-container--full {
+    width: 100%;
+    padding: 8rem 0;
+
+    .l-container__illustration {
+      width: 35rem;
+    }
+  }
+  
+  .l-container {
+    &__illustration {
+      width: 35rem;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.c-curve {
+  width: 100%;
+  padding-top: 8rem;
+  
+  &__image {
+    display: block; // Remove empty space at the end of the image
+    width: inherit;
+  }
+}

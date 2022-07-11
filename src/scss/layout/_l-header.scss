@@ -1,0 +1,8 @@
+@use "../base/extends";
+
+.l-header {
+  @extend %u-display-flex, %u-justify-space-between, %u-align-center;
+
+  width: 125rem;
+  height: 20rem;
+}

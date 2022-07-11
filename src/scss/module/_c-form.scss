@@ -1,0 +1,31 @@
+@use "../base/extends";
+
+.c-form {
+  @extend %u-display-flex, %u-justify-space-between;
+
+  padding: 1rem 0;
+  width: 53rem;
+
+  &__input {
+    width: 32rem;
+    height: 4rem;
+    padding: 2rem;
+
+    font-size: 1.6rem;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+
+  &--column {
+    @extend %u-direction-column, %u-align-start;
+
+    height: 12rem;
+    width: 51rem;
+
+    .c-form__input {
+      width: 46rem;
+    }
+  }
+}

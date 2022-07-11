@@ -1,0 +1,19 @@
+@use "../base/base";
+
+.c-user {
+  @extend %u-display-flex, %u-align-center, %u-justify-space-between;
+
+  width: 15rem;
+
+  font-family: "Raleway", sans-serif;
+
+  &__avatar {
+    width: 3rem;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+}
